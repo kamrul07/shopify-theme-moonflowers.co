@@ -1,0 +1,63 @@
+
+<div class="about-page-section-wrapper">
+    <div class="about-page-section-container">
+        <div class="about-page-section-row mobile-reverse">
+            <div class="about-page-section-column">
+                <div class="about-page-section-1-text">
+                    <h2>{{ section.settings.roundheroTitles }}</h2>
+                    <div class="round_page_content">
+                    {{ page.settings.roundheroContents }}
+                  </div>
+                </div>
+            </div>
+            <div class="about-page-section-column">
+                <div class="about-page-section-1-image round">
+                    <img src="{{ section.settings.round_hero_banners | img_url: '501x501' }}" alt="">
+                    <p>{{ page.settings.image_caption_rounds }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% schema %}
+{
+	"name": "Round into content",
+	"class": "shopify-section-roundheros",
+	"settings": [
+		{
+			"type": "image_picker",
+			"id": "round_hero_banners",
+			"label": "Round picture",
+			"info": "Round picture"
+		},
+		
+		{
+			"type": "text",
+			"id": "roundheroTitles",
+			"label": "Section title",
+            "default": "Put Section title"
+		},
+		{
+			"type": "text",
+			"id": "image_caption_rounds",
+			"label": "Image section",
+            "default": "Image caption"
+		},
+		{
+			"type": "richtext",
+			"id": "roundheroContents",
+			"label": "Section content",
+			 "default": "<p>Put the details content</p>"
+		}
+	]
+}
+{% endschema %}
+
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

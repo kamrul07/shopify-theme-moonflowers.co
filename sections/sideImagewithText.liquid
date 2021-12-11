@@ -1,0 +1,111 @@
+<div class="about-page-section-wrapper">
+    <div class="about-page-section-container">
+        <div class="about-page-section-row mobile-reverse">
+            <div class="about-page-section-column p-50">
+                <div class="about-page-section-1-text">
+                    <h2>{{ section.settings.siwt_title }}</h2>
+                    <div class="section_detail_content">{{ section.settings.siwt_content }}</div>
+                </div>
+            </div>
+            <div class="about-page-section-column">
+                <div class="about-page-section-1-image round">
+                    <img src="{{ section.settings.sideImg_intro | img_url: '501x' }}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% for block in section.blocks %}
+<div class="side_img_sections about-page-section-wrapper" {{ block.shopify_attributes }}>
+    <div class="about-page-section-container-full">
+        <div class="about-page-section-row">
+            <div class="about-page-section-column">
+                <div class="about-page-section-1-image">
+                    <img src="{{ block.settings.imageBox_img | img_url: '730x730' }}" alt="">
+                </div>
+            </div>
+            <div class="about-page-section-column p-50">
+                <div class="about-page-section-1-text">
+                    <h2>{{ block.settings.imageBox_title }}</h2>
+                    <div class="section_detail_content">
+                      <div class="section_detail_content_des"> 
+                      {{ block.settings.imageBox_content }}
+                      </div>
+                      <div class="section_detail_content_exapmple"> 
+                      {{ block.settings.imageBox_example }}
+                      </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}
+
+
+{% schema %}
+  {
+    "name": "Side images",
+	"class": "shopify-section-sideimagesec",
+        "settings": [
+
+		{
+			"type": "image_picker",
+			"id": "sideImg_intro",
+			"label": "Full page banner",
+			"info": "Full page banner"
+		},
+		{
+			"type": "text",
+			"id": "siwt_title",
+			"label": "Section intro title",
+			"info": "Section intro title"
+		},		
+        {
+			"type": "richtext",
+			"id": "siwt_content",
+			"label": "Section intro content",
+			"info": "Section intro content"
+		}
+   ],
+ "blocks": [
+      {
+        "type": "img_box",
+        "name": "Image box",
+        "limit": 10,
+        "settings": [
+          {
+            "id": "imageBox_img",
+            "type": "image_picker",
+            "label": "Image"
+          },
+		{
+			"type": "text",
+			"id": "imageBox_title",
+			"label": "Section  title",
+			"info": "Section title"
+		},		
+        {
+			"type": "richtext",
+			"id": "imageBox_content",
+			"label": "Section content",
+			"info": "Section content"
+		},
+        {
+			"type": "richtext",
+			"id": "imageBox_example",
+			"label": "Example content",
+			"info": "Example content"
+		}
+        ]
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

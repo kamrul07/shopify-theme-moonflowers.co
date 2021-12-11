@@ -1,0 +1,53 @@
+<div class="about-page-section-wrapper">
+    <div class="about-page-section-container">
+        <div class="about-page-section-row mobile-reverse">
+            <div class="about-page-section-column w-m-50 p-50">
+                <div class="about-page-section-1-text">
+                    <h2>{{ section.settings.iwtlSectionTitle }}</h2>
+                    <div class="section_detail_content">{{ section.settings.iwtlContent }}</div>
+                </div>
+            </div>
+            <div class="about-page-section-column w-l-50 p-50">
+                <div class="about-page-section-1-image">
+                    <img src="{{ section.settings.iwtl_banner | img_url: '501x' }}" alt="{{ section.settings.iwtlSectionTitle }}">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Image with left side text",
+    "class": "shopify-section-iwtl",
+    "settings": [
+
+		{
+			"type": "image_picker",
+			"id": "iwtl_banner",
+			"label": "Section image",
+			"info": "Section image"
+		},
+         {
+			"type": "text",
+			"id": "iwtlSectionTitle",
+			"label": "Section title",
+            "default": "Section title"
+		},
+		{
+			"type": "richtext",
+			"id": "iwtlContent",
+			"label": "Section content",
+			"default": "<p>Put the details content</p>"
+		}
+   ]
+  }
+{% endschema %}
+
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

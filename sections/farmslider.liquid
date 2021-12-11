@@ -1,0 +1,1122 @@
+
+
+<style>
+
+ 
+
+/* The element to apply the animation to */
+/* img {
+ 
+  
+  animation-name: fadeF;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+  
+} 
+  
+ @keyframes fadeF {
+  0%   {opacity: 0.3;}
+    25%   {opacity: 0.5;}
+    50%   {opacity: 0.7;}
+ 
+
+  100% {opacity: 1;}
+}  
+ */
+/*   img {
+   
+            
+           animation-iteration-count=1;
+            animation: fadein 1s;
+}
+
+    @keyframes fadein {
+    from { opacity: 0.3; }
+    to   { opacity: 1; }
+} */
+       p {
+        font-size: 25px;
+      }
+
+    .sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  margin-top: 15px;
+}
+a:hover {
+    color: inherit!important;
+    text-decoration: none!important;
+} 
+</style>
+
+    <div class="the-farm-hero-section-wrapper">
+        <div class="the-farm-hero-section-content" >
+            <h1 >{{ section.settings.mainheroTitles }}</h1>
+            <img src="{{ section.settings.main_hero_banners | img_url: '1080x800' }}" alt="">
+            <div class="the-farm-hero-section-icon-images">
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="the-farm-blue-bg-content-section-wapper" >
+        <div class="the-farm-blue-bg-content-section-content">
+            <h3>{{ section.settings.baneer_subtitle }} </h3>
+          <p class="blue_contents">{{ section.settings.banner_mainTitles }}</p>  
+          
+        </div>
+    </div>
+
+
+    <div class="the-farm-50-50-image-content-section-wrappere" >
+        <div class="the-farm-50-50-image-content-section-inner">
+
+            <div class="the-farm-50-50-image-content-section-image">
+                <img src="{{ section.settings.info_banner | img_url: '780x1170' }}" alt="">
+            </div>
+            <div class="the-farm-50-50-image-content-section-content">
+                <div class="th50-text-wwrapper">
+                    
+                    <h3>{{ section.settings.infoSectionTitle }}
+                    </h3>
+                     <div class="info_content">
+                     {{ section.settings.infoContent  }}
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<div class="image_slider_wrapper">
+         <div class="pt-nav">
+            <div class="process-module mv80 l:mv100" data-component="processModule">
+               <div class="reveal" data-component="reveal">
+                  <div class="dn l:df">
+                     <div class="w50 pt150 pl40 xxl:pl70 pr50 pr60 xl:pr80  content_section">
+                        <h3 class="f18 lh117 ls04 ttu mb25"></h3>
+                        <ul class="process-module__step content_ul">
+                           <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                           <li 
+                               id="scroll-to"  class="first_slider_content process-module__step rel pv50 serif f24 xs:f26 s:f29 m:f44 xxl:f48 lh117 js-steps single_content_list"
+                              >
+                              <h2 class="mb35 pl65">{{ section.settings.processtitle1 }}</h2>
+                              <div class="sans f22 lh130 xl:pl65">
+                                {{ section.settings.processContent1 }}
+                              </div>
+                           </li>
+                           <li
+                               id="scroll-to2"  class="process-module__step rel pv50 serif f24 xs:f26 s:f29 m:f44 xxl:f48 lh117 js-steps single_content_list"
+                              style="opacity: 0.40;"
+                              >
+                              <h2 class="mb35 pl65">{{ section.settings.processtitle2 }}</h2>
+                              <div class="sans f22 lh130 xl:pl65">
+                                {{ section.settings.processContent2 }}
+                              </div>
+                           </li>
+                           <li
+                               id="scroll-to3"   class="process-module__step rel pv50 serif f24 xs:f26 s:f29 m:f44 xxl:f48 lh117 js-steps single_content_list"
+                              style="opacity: 0.40;"
+                              >
+                              <h2 class="mb35 pl65">{{ section.settings.processtitle3 }}</h2>
+                              <div class="sans f22 lh130 xl:pl65">
+                                {{ section.settings.processContent3 }}
+                              </div>
+                           </li>
+                           <li
+                               id="scroll-to4"   class="process-module__step rel pv50 serif f24 xs:f26 s:f29 m:f44 xxl:f48 lh117 js-steps single_content_list"
+                              style="opacity: 0.40;"
+                              >
+                              <h2 class="mb35 pl65">{{ section.settings.processtitle4 }}</h2>
+                              <div class="sans f22 lh130 xl:pl65">
+                                {{ section.settings.processContent4 }}
+                              </div>
+                           </li>
+                           <li
+                               id="scroll-to5"  class="process-module__step rel pv50 serif f24 xs:f26 s:f29 m:f44 xxl:f48 lh117 js-steps single_content_list"
+                              style="opacity: 0.40;"
+                              >
+                              <h2 class="mb35 pl65">{{ section.settings.processtitle5 }}</h2>
+                              <div class="sans f22 lh130 xl:pl65">
+                                {{ section.settings.processContent5 }}
+                              </div>
+                           </li>
+                          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                          <li
+                               id="to6"  
+                              
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="sticky top w50 vh100 pv35 js-imageWrap slider_img_sections">
+                        <div class="rel x y">
+                           <div class="abs fill oh brl8 js-images single_im_list"  id="myDIV" style="background:url({{ section.settings.processImage1 | img_url: '667x887' }})">
+
+                           </div>
+                           <div id="myDIV2" class="abs fill oh brl8 js-images single_im_list" style="opacity: 0; visibility: hidden; pointer-events: none; z-index: 2; background:url({{ section.settings.processImage2 | img_url: '667x887' }})" >
+
+                           </div>
+                           <div id="myDIV3" class="abs fill oh brl8 js-images single_im_list" style="opacity: 0; visibility: hidden; pointer-events: none; z-index: 3; background:url({{ section.settings.processImage3 | img_url: '667x887' }})">
+
+                           </div>
+                           <div id="myDIV4" class="abs fill oh brl8 js-images single_im_list" style="opacity: 0; visibility: hidden; pointer-events: none; z-index: 4; background:url({{ section.settings.processImage4 | img_url: '667x887' }})">
+
+                           </div>
+                           <div id="myDIV5"
+                              class="abs fill oh brl8 js-images single_im_list"
+                              style="opacity: 0; visibility: hidden; pointer-events: none; z-index: 5; background:url({{ section.settings.processImage5 | img_url: '667x887' }})"
+                              >
+
+
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+</div>
+
+<div class="mobile_image_slider">
+  <div class="mobile_img_scroll owl-carousel">
+    <div class="single_farm_slider">
+       <div class="sing_img_block_farm" style="background:url({{ section.settings.processImage1 | img_url: '667x887' }});" >
+      </div>
+      <h2>{{ section.settings.processtitle1 }}</h2>
+      <div class="farm_sli_content">{{ section.settings.processContent1 }}</div>
+    </div>
+    <div class="single_farm_slider">
+       <div class="sing_img_block_farm" style="background:url({{ section.settings.processImage2 | img_url: '667x887' }});" >
+      </div>
+      <h2>{{ section.settings.processtitle2 }}</h2>
+      <div class="farm_sli_content">{{ section.settings.processContent2 }}</div>
+    </div>
+    <div class="single_farm_slider">
+       <div class="sing_img_block_farm" style="background:url({{ section.settings.processImage3 | img_url: '667x887' }});" >
+      </div>
+      <h2>{{ section.settings.processtitle3 }}</h2>
+      <div class="farm_sli_content">{{ section.settings.processContent3 }}</div>
+    </div>
+    <div class="single_farm_slider">
+       <div class="sing_img_block_farm" style="background:url({{ section.settings.processImage4 | img_url: '667x887' }});" >
+      </div>
+      <h2>{{ section.settings.processtitle4 }}</h2>
+      <div class="farm_sli_content">{{ section.settings.processContent4 }}</div>
+    </div>
+    <div class="single_farm_slider">
+       <div class="sing_img_block_farm" style="background:url({{ section.settings.processImage5 | img_url: '667x887' }});" >
+      </div>
+      <h2>{{ section.settings.processtitle5 }}</h2>
+      <div class="farm_sli_content">{{ section.settings.processContent5 }}</div>
+    </div>
+  </div>
+</div>
+
+
+
+{% schema %}
+  {
+    "name": "Page content",
+    "class": "shopify-section-safronpage",
+    "settings": [
+		{
+			"type": "image_picker",
+			"id": "main_hero_banners",
+			"label": "Main Hero picture",
+			"info": "Main Hero picture"
+		},
+		
+		{
+			"type": "text",
+			"id": "mainheroTitles",
+			"label": "Section title",
+            "default": "Put Section title"
+		},
+        {
+			"type": "header",
+			"content": "Banner Text"
+
+		},
+		{
+			"type": "text",
+			"id": "baneer_subtitle",
+			"label": "Banner subtitle",
+            "default": "Put banner subtitle"
+		},
+		{
+			"type": "text",
+			"id": "banner_mainTitles",
+			"label": "Banner  title",
+            "default": "Put banner title"
+		},
+
+        {
+			"type": "header",
+			"content": "Information area"
+
+		},
+        {
+			"type": "image_picker",
+			"id": "info_banner",
+			"label": "Information section Banner",
+			"info": "Information section Banner"
+		},
+         {
+			"type": "text",
+			"id": "infoSectionTitle",
+			"label": "Information area title",
+            "default": "Information area title"
+		},
+		{
+			"type": "richtext",
+			"id": "infoContent",
+			"label": "Information area content",
+			"default": "<p>Information area content</p>"
+		},
+        {
+			"type": "header",
+			"content": "Stay a while section"
+
+		},
+        {
+			"type": "image_picker",
+			"id": "stay_banner",
+			"label": "Section image",
+			"info": "Section image"
+		},
+         {
+			"type": "text",
+			"id": "staySectionTitle",
+			"label": "Section title",
+            "default": "Section title"
+		},
+         {
+			"type": "text",
+			"id": "staySectionbutton",
+			"label": "Button title",
+            "default": "Button title"
+		},
+         {
+			"type": "text",
+			"id": "staySectionurl",
+			"label": "Button URL",
+            "default": "Button URL"
+		},
+		{
+			"type": "richtext",
+			"id": "staywtContent",
+			"label": "Section content",
+			"default": "<p>Section content</p>"
+		},
+        {
+			"type": "header",
+			"content": "Full page banner area"
+
+		},
+        {
+			"type": "image_picker",
+			"id": "fullpagess_banner",
+			"label": "Full page image",
+			"info": "Full page image"
+		},
+        {
+			"type": "header",
+			"content": "CTA area"
+
+		},
+        
+         {
+			"type": "text",
+			"id": "fctaSectionTitle",
+			"label": "CTA Section title",
+            "default": "CTA section title"
+		},
+		{
+			"type": "text",
+			"id": "fctabuttonContent",
+			"label": "CTA button text",
+			"default": "CTA button text"
+		},
+		{
+			"type": "text",
+			"id": "fctabuttonurl",
+			"label": "CTA button URL",
+			"default": "CTA button URL"
+		},
+        {
+			"type": "header",
+			"content": "Processing steps"
+
+		},
+        
+         {
+			"type": "text",
+			"id": "processtitle1",
+			"label": "Process step 1 title",
+            "default": "The land"
+		},
+		{
+			"type": "richtext",
+			"id": "processContent1",
+			"label": "Process step 1 content",
+			"default": "<p>Before the saffron corms can be planted, the farmers prepare the land by deep ploughing it, leveling it, removing weeds and other materials, and making small plots. Soil preparation is practiced in autumn or winter. In Afghanistan, the farmers use the ridge planting method to plant the saffron corms. This method provides better protection against high temperature as well as pest and diseases.</p>"
+		},
+        {
+			"type": "image_picker",
+			"id": "processImage1",
+			"label": "Process step 1 image ",
+			"info": "Process step 1 image "
+		},
+        
+         {
+			"type": "text",
+			"id": "processtitle2",
+			"label": "Process step 2 title",
+            "default": "The care"
+		},
+		{
+			"type": "richtext",
+			"id": "processContent2",
+			"label": "Process step 2 content",
+			"default": "<p>The saffron corms are planted generally from April through June, which leads to the best production. Saffron does not require a lot of nutrients compared to other agricultural plants. In the eastern region of Afghanistan water for the land is limited and irrigation plans are a must. Fortunately, saffron doesn’t need much irrigation. The growth of saffron starts after the first irrigation, usually around September. Water is then necessary to support the flowering of the saffron corm.</p>"
+		},
+        {
+			"type": "image_picker",
+			"id": "processImage2",
+			"label": "Process step 2 image ",
+			"info": "Process step 2 image "
+		},
+        
+         {
+			"type": "text",
+			"id": "processtitle3",
+			"label": "Process step 3 title",
+            "default": "The harvest"
+		},
+		{
+			"type": "richtext",
+			"id": "processContent3",
+			"label": "Process step 3 content",
+			"default": "<p>The flowering stage of the saffron starts in October and continues for three weeks. Each flower lives for only 48 hours, which is why it is key to ensure harvest within this short period of time. The saffron flowers should be picked early morning, as soon as they open. It is important for the saffron pickers to pick the flowers in a fast pace, as the wilting of the flowers makes the post-harvest process difficult. The optimal harvest time is in the very early morning, before there is full soon.  This is where the name Moonflowers stems from, the best quality of saffron stigma is guaranteed when the flowers are picked under the moonlight.  The saffron pickers must collect approximately 150,000 flowers to produce one kilo of saffron spice.</p>"
+		},
+        {
+			"type": "image_picker",
+			"id": "processImage3",
+			"label": "Process step 3 image ",
+			"info": "Process step 3 image "
+		},
+         {
+			"type": "text",
+			"id": "processtitle4",
+			"label": "Process step 4 title",
+            "default": "The processing"
+		},
+		{
+			"type": "richtext",
+			"id": "processContent4",
+			"label": "Process step 4 content",
+			"default": "<p>When the saffron flowers have been collected from the fields, they will be transported to a farm house where it’s kept in a clean and shaded facility for further processing. The ideal temperature for storage of the saffron flowers is near 0 Celsius. The quality of the saffron stigma’s relies on the immediate processing. The saffron pickers separate the stigmas from the flowers in a facility. At this stage the stigmas are bright orange-red and are attached to the flowers by pale filaments called styles. The styles as well as the yellow stamens, are worthless as spice. It takes about 450,000 stigmas to make up a kilogram of saffron spice.</p>"
+		},
+        {
+			"type": "image_picker",
+			"id": "processImage4",
+			"label": "Process step 4 image ",
+			"info": "Process step 4 image "
+		},
+         {
+			"type": "text",
+			"id": "processtitle5",
+			"label": "Process step 5 title",
+            "default": "The drying"
+		},
+		{
+			"type": "richtext",
+			"id": "processContent5",
+			"label": "Process step 5 content",
+			"default": "<p>The stigma must be dried to ensure premium quality. Drying must be done very precisely, if it is too moist the stigmas might get infected with fungus and when it’s too dry the stigmas might break easily into powder. In Afghanistan, the climate allows for air drying which takes up to a week.</p>"
+		},
+        {
+			"type": "image_picker",
+			"id": "processImage5",
+			"label": "Process step 5 image ",
+			"info": "Process step 5 image "
+		}
+   ],
+ "blocks": [
+      {
+        "type": "farming",
+        "name": "Farming steps",
+        "limit": 10,
+        "settings": [
+          {
+            "id": "fimageBox_img",
+            "type": "image_picker",
+            "label": "Image"
+          },
+		{
+			"type": "text",
+			"id": "fimageBox_title",
+			"label": "Section  title",
+			"info": "Section title"
+		},		
+        {
+			"type": "richtext",
+			"id": "fimageBox_content",
+			"label": "Section content",
+			"info": "Section content"
+		}
+       
+        ]
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
+ <script>
+   
+  
+   $(window).scroll(function() {
+   var hT = $('#scroll-to').offset().top,
+       hH = $('#scroll-to').outerHeight(),
+       wH = $(window).height(),
+       wS = $(this).scrollTop();
+   if(wS > (hT+hH-wH) ){
+       console.log('H1 on the view!');
+          
+             var x = document.getElementById("myDIV");
+      var x2 = document.getElementById("myDIV2");
+      var x3 = document.getElementById("myDIV3");
+        var x4 = document.getElementById("myDIV4");
+          var x5 = document.getElementById("myDIV5");
+      var t1 = document.getElementById("scroll-to");
+      var t2 = document.getElementById("scroll-to2");
+      var t3 = document.getElementById("scroll-to3");
+       var t4 = document.getElementById("scroll-to4");
+        var t5 = document.getElementById("scroll-to5");
+      t3.style.opacity = 0.3;
+      t2.style.opacity = 0.3;
+      t1.style.opacity = 1;
+      t4.style.opacity = 0.3;
+      t5.style.opacity = 0.3;
+      x.style.opacity = 1;
+      x.style.visibility = "visible";
+      x2.style.opacity = 0;
+    x2.style.visibility = "hidden";
+      x3.style.opacity = 0;
+     x3.style.visibility = "hidden";
+      x4.style.opacity = 0;
+     x4.style.visibility = "hidden";
+      x5.style.opacity = 0;
+     x5.style.visibility = "hidden";
+   }
+});
+      $(window).scroll(function() {
+   var hT = $('#scroll-to2').offset().top,
+       hH = $('#scroll-to2').outerHeight(),
+       wH = $(window).height(),
+       wS = $(this).scrollTop();
+   if (wS > (hT+hH-wH)){
+       console.log('H1 on the view!');
+          
+//              var x = document.getElementById("myDIV");
+//       var x2 = document.getElementById("myDIV2");
+//       var x3 = document.getElementById("myDIV3");
+//         var x4 = document.getElementById("myDIV4");
+//           var x5 = document.getElementById("myDIV5");
+//       var t1 = document.getElementById("scroll-to");
+//       var t2 = document.getElementById("scroll-to2");
+//       var t3 = document.getElementById("scroll-to3");
+//        var t4 = document.getElementById("scroll-to4");
+//         var t5 = document.getElementById("scroll-to5");
+//       t3.style.opacity = 0.3;
+//       t1.style.opacity = 0.3;
+//       t2.style.opacity = 1;
+//       t4.style.opacity = 0.3;
+//       t5.style.opacity = 0.3;
+//       x2.style.display = "block";
+//       x.style.display = "none";
+//       x3.style.display = "none";
+//       x4.style.display = "none";
+//       x5.style.display = "none";
+     
+     
+             var x = document.getElementById("myDIV");
+      var x2 = document.getElementById("myDIV2");
+      var x3 = document.getElementById("myDIV3");
+        var x4 = document.getElementById("myDIV4");
+          var x5 = document.getElementById("myDIV5");
+      var t1 = document.getElementById("scroll-to");
+      var t2 = document.getElementById("scroll-to2");
+      var t3 = document.getElementById("scroll-to3");
+       var t4 = document.getElementById("scroll-to4");
+        var t5 = document.getElementById("scroll-to5");
+      t3.style.opacity = 0.3;
+      t2.style.opacity = 0.3;
+      t1.style.opacity = 1;
+      t4.style.opacity = 0.3;
+      t5.style.opacity = 0.3;
+      x.style.opacity = 1;
+      x.style.visibility = "visible";
+      x2.style.opacity = 0;
+     x2.style.visibility = "hidden";
+      x3.style.opacity = 0;
+     x3.style.visibility = "hidden";
+      x4.style.opacity = 0;
+     x4.style.visibility = "hidden";
+      x5.style.opacity = 0;
+     x5.style.visibility = "hidden";
+   }
+});
+      $(window).scroll(function() {
+   var hT = $('#scroll-to3').offset().top,
+       hH = $('#scroll-to3').outerHeight(),
+       wH = $(window).height(),
+       wS = $(this).scrollTop();
+   if (wS > (hT+hH-wH) && (hT > wS) && (wS+wH > hT+hH)){
+       console.log('H1 on the view!');
+          
+//              var x = document.getElementById("myDIV");
+//       var x2 = document.getElementById("myDIV2");
+//       var x3 = document.getElementById("myDIV3");
+//         var x4 = document.getElementById("myDIV4");
+//           var x5 = document.getElementById("myDIV5");
+//       var t1 = document.getElementById("scroll-to");
+//       var t2 = document.getElementById("scroll-to2");
+//       var t3 = document.getElementById("scroll-to3");
+//        var t4 = document.getElementById("scroll-to4");
+//         var t5 = document.getElementById("scroll-to5");
+//       t1.style.opacity = 0.3;
+//       t2.style.opacity = 0.3;
+//       t3.style.opacity = 1;
+//       t4.style.opacity = 0.3;
+//       t5.style.opacity = 0.3;
+//       x3.style.display = "block";
+//       x2.style.display = "none";
+//       x.style.display = "none";
+//       x4.style.display = "none";
+//       x5.style.display = "none";
+     
+     
+                  var x = document.getElementById("myDIV");
+      var x2 = document.getElementById("myDIV2");
+      var x3 = document.getElementById("myDIV3");
+        var x4 = document.getElementById("myDIV4");
+          var x5 = document.getElementById("myDIV5");
+      var t1 = document.getElementById("scroll-to");
+      var t2 = document.getElementById("scroll-to2");
+      var t3 = document.getElementById("scroll-to3");
+       var t4 = document.getElementById("scroll-to4");
+        var t5 = document.getElementById("scroll-to5");
+      t3.style.opacity = 0.3;
+      t1.style.opacity = 0.3;
+      t2.style.opacity = 1;
+      t4.style.opacity = 0.3;
+      t5.style.opacity = 0.3;
+      x2.style.opacity = 1;
+     x2.style.visibility = "visible";
+      x.style.opacity = 0;
+     x.style.visibility = "hidden";
+      x3.style.opacity = 0;
+     x3.style.visibility = "hidden";
+      x4.style.opacity = 0;
+     x4.style.visibility = "hidden";
+      x5.style.opacity = 0;
+     x5.style.visibility = "hidden";
+   }
+});
+   
+      $(window).scroll(function() {
+   var hT = $('#scroll-to4').offset().top,
+       hH = $('#scroll-to4').outerHeight(),
+       wH = $(window).height(),
+       wS = $(this).scrollTop();
+   if (wS > (hT+hH-wH) && (hT > wS) && (wS+wH > hT+hH)){
+       console.log('H1 on the view!');
+          
+//              var x = document.getElementById("myDIV");
+//       var x2 = document.getElementById("myDIV2");
+//       var x3 = document.getElementById("myDIV3");
+//         var x4 = document.getElementById("myDIV4");
+//           var x5 = document.getElementById("myDIV5");
+//       var t1 = document.getElementById("scroll-to");
+//       var t2 = document.getElementById("scroll-to2");
+//       var t3 = document.getElementById("scroll-to3");
+//        var t4 = document.getElementById("scroll-to4");
+//         var t5 = document.getElementById("scroll-to5");
+//       t3.style.opacity = 0.3;
+//       t2.style.opacity = 0.3;
+//       t4.style.opacity = 1;
+//       t1.style.opacity = 0.3;
+//       t5.style.opacity = 0.3;
+//       x4.style.display = "block";
+//       x2.style.display = "none";
+//       x3.style.display = "none";
+//       x.style.display = "none";
+//       x5.style.display = "none";
+     
+                  var x = document.getElementById("myDIV");
+      var x2 = document.getElementById("myDIV2");
+      var x3 = document.getElementById("myDIV3");
+        var x4 = document.getElementById("myDIV4");
+          var x5 = document.getElementById("myDIV5");
+      var t1 = document.getElementById("scroll-to");
+      var t2 = document.getElementById("scroll-to2");
+      var t3 = document.getElementById("scroll-to3");
+       var t4 = document.getElementById("scroll-to4");
+        var t5 = document.getElementById("scroll-to5");
+      t1.style.opacity = 0.3;
+      t2.style.opacity = 0.3;
+      t3.style.opacity = 1;
+      t4.style.opacity = 0.3;
+      t5.style.opacity = 0.3;
+      x3.style.opacity = 1;
+     x3.style.visibility = "visible";
+      x2.style.opacity = 0;
+     x2.style.visibility = "hidden";
+      x.style.opacity = 0;
+     x.style.visibility = "hidden";
+      x4.style.opacity = 0;
+     x4.style.visibility = "hidden";
+      x5.style.opacity = 0;
+     x5.style.visibility = "hidden";
+   }
+});
+      $(window).scroll(function() {
+   var hT = $('#scroll-to5').offset().top,
+       hH = $('#scroll-to5').outerHeight(),
+       wH = $(window).height(),
+       wS = $(this).scrollTop();
+   if (wS > (hT+hH-wH) && (hT > wS) && (wS+wH > hT+hH)){
+       console.log('H1 on the view!');
+          
+//              var x = document.getElementById("myDIV");
+//       var x2 = document.getElementById("myDIV2");
+//       var x3 = document.getElementById("myDIV3");
+//         var x4 = document.getElementById("myDIV4");
+//           var x5 = document.getElementById("myDIV5");
+//       var t1 = document.getElementById("scroll-to");
+//       var t2 = document.getElementById("scroll-to2");
+//       var t3 = document.getElementById("scroll-to3");
+//        var t4 = document.getElementById("scroll-to4");
+//         var t5 = document.getElementById("scroll-to5");
+//       t3.style.opacity = 0.3;
+//       t2.style.opacity = 0.3;
+//       t5.style.opacity = 1;
+//       t4.style.opacity = 0.3;
+//       t1.style.opacity = 0.3;
+//       x5.style.display = "block";
+//       x2.style.display = "none";
+//       x3.style.display = "none";
+//       x4.style.display = "none";
+//       x.style.display = "none";
+     
+     
+                 var x = document.getElementById("myDIV");
+      var x2 = document.getElementById("myDIV2");
+      var x3 = document.getElementById("myDIV3");
+        var x4 = document.getElementById("myDIV4");
+          var x5 = document.getElementById("myDIV5");
+      var t1 = document.getElementById("scroll-to");
+      var t2 = document.getElementById("scroll-to2");
+      var t3 = document.getElementById("scroll-to3");
+       var t4 = document.getElementById("scroll-to4");
+        var t5 = document.getElementById("scroll-to5");
+      t3.style.opacity = 0.3;
+      t2.style.opacity = 0.3;
+      t4.style.opacity = 1;
+      t1.style.opacity = 0.3;
+      t5.style.opacity = 0.3;
+      x4.style.opacity = 1;
+     x4.style.visibility = "visible";
+      x2.style.opacity = 0;
+     x2.style.visibility = "hidden";
+      x3.style.opacity = 0;
+     x3.style.visibility = "hidden";
+      x.style.opacity = 0;
+     x.style.visibility = "hidden";
+      x5.style.opacity = 0;
+     x5.style.visibility = "hidden";
+   }
+});
+   
+         $(window).scroll(function() {
+   var hT = $('#to6').offset().top,
+       hH = $('#to6').outerHeight(),
+       wH = $(window).height(),
+       wS = $(this).scrollTop();
+   if (wS > (hT+hH-wH) && (hT > wS) && (wS+wH > hT+hH)){
+       console.log('H1 on the view!');
+          
+             var x = document.getElementById("myDIV");
+      var x2 = document.getElementById("myDIV2");
+      var x3 = document.getElementById("myDIV3");
+        var x4 = document.getElementById("myDIV4");
+          var x5 = document.getElementById("myDIV5");
+      var t1 = document.getElementById("scroll-to");
+      var t2 = document.getElementById("scroll-to2");
+      var t3 = document.getElementById("scroll-to3");
+       var t4 = document.getElementById("scroll-to4");
+        var t5 = document.getElementById("scroll-to5");
+      t3.style.opacity = 0.3;
+      t2.style.opacity = 0.3;
+      t5.style.opacity = 1;
+      t4.style.opacity = 0.3;
+      t1.style.opacity = 0.3;
+      x5.style.opacity = 1;
+     x5.style.visibility = "visible";
+      x2.style.opacity = 0;
+     x2.style.visibility = "hidden";
+      x3.style.opacity = 0;
+     x3.style.visibility = "hidden";
+      x4.style.opacity = 0;
+     x4.style.visibility = "hidden";
+      x.style.opacity = 0;
+     x.style.visibility = "hidden";
+     
+     
+     
+         
+   }
+});
+   
+          
+   
+//   //Does something when user scrolls to it OR
+//   //Does it when user has reached the bottom of the page and hasn't triggered the function yet
+//   $(window).on("scroll", function () {
+//     var element_position = $("#scroll-to").offset().top;
+//     var screen_height = $(window).height();
+//     var activation_offset = 0.5; //determines how far up the the page the element needs to be before triggering the function
+//     var activation_point = element_position - screen_height * activation_offset;
+//     var max_scroll_height = $("body").height() - screen_height - 5; //-5 for a little bit of buffer
+//     var y_scroll_pos = window.pageYOffset;
+
+//     var element_in_view = y_scroll_pos > activation_point;
+//     var has_reached_bottom_of_page =
+//       max_scroll_height <= y_scroll_pos && !element_in_view;
+
+//     if (element_in_view || has_reached_bottom_of_page) {
+//       var x = document.getElementById("myDIV");
+//       var x2 = document.getElementById("myDIV2");
+//       var x3 = document.getElementById("myDIV3");
+//         var x4 = document.getElementById("myDIV4");
+//           var x5 = document.getElementById("myDIV5");
+//       var t1 = document.getElementById("scroll-to");
+//       var t2 = document.getElementById("scroll-to2");
+//       var t3 = document.getElementById("scroll-to3");
+//        var t4 = document.getElementById("scroll-to4");
+//         var t5 = document.getElementById("scroll-to5");
+//       t3.style.opacity = 0.3;
+//       t2.style.opacity = 0.3;
+//       t1.style.opacity = 1;
+//       t4.style.opacity = 0.3;
+//       t5.style.opacity = 0.3;
+//       x.style.display = "block";
+//       x2.style.display = "none";
+//       x3.style.display = "none";
+//       x4.style.display = "none";
+//       x5.style.display = "none";
+
+//     }
+//   });
+
+//   $(window).on("scroll", function () {
+//     var element_position = $("#scroll-to2").offset().top;
+//     var screen_height = $(window).height();
+//     var activation_offset = 0.5; //determines how far up the the page the element needs to be before triggering the function
+//     var activation_point = element_position - screen_height * activation_offset;
+//     var max_scroll_height = $("body").height() - screen_height - 5; //-5 for a little bit of buffer
+//     var y_scroll_pos = window.pageYOffset;
+
+//     var element_in_view = y_scroll_pos > activation_point;
+//     var has_reached_bottom_of_page =
+//       max_scroll_height <= y_scroll_pos && !element_in_view;
+
+//     if (element_in_view || has_reached_bottom_of_page) {
+//       var x = document.getElementById("myDIV");
+//       var x2 = document.getElementById("myDIV2");
+//       var x3 = document.getElementById("myDIV3");
+//          var x4 = document.getElementById("myDIV4");
+//       var x5 = document.getElementById("myDIV5");
+//       var t1 = document.getElementById("scroll-to");
+//       var t2 = document.getElementById("scroll-to2");
+//       var t3 = document.getElementById("scroll-to3");
+//        var t4 = document.getElementById("scroll-to4");
+//       var t5 = document.getElementById("scroll-to5");
+//       t1.style.opacity = 0.3;
+//       t2.style.opacity = 1;
+//       t3.style.opacity = 0.3;
+//        t4.style.opacity = 0.3;
+//         t5.style.opacity = 0.3;
+//       x.style.display = "none";
+//       x2.style.display = "block";
+//       x3.style.display = "none";
+//        x4.style.display = "none";
+//         x5.style.display = "none";
+//     }
+//   });
+
+//   $(window).on("scroll", function () {
+//     var element_position = $("#scroll-to3").offset().top;
+//     var screen_height = $(window).height();
+//     var activation_offset = 0.5; //determines how far up the the page the element needs to be before triggering the function
+//     var activation_point = element_position - screen_height * activation_offset;
+//     var max_scroll_height = $("body").height() - screen_height - 5; //-5 for a little bit of buffer
+//     var y_scroll_pos = window.pageYOffset;
+
+//     var element_in_view = y_scroll_pos > activation_point;
+//     var has_reached_bottom_of_page =
+//       max_scroll_height <= y_scroll_pos && !element_in_view;
+
+//     if (element_in_view || has_reached_bottom_of_page) {
+//       var x = document.getElementById("myDIV");
+//       var x2 = document.getElementById("myDIV2");
+//       var x3 = document.getElementById("myDIV3");
+//         var x4 = document.getElementById("myDIV4");
+//       var x5 = document.getElementById("myDIV5");
+//       var t1 = document.getElementById("scroll-to");
+//       var t2 = document.getElementById("scroll-to2");
+//       var t3 = document.getElementById("scroll-to3");
+//       var t4 = document.getElementById("scroll-to4");
+//       var t5 = document.getElementById("scroll-to5");
+//       t1.style.opacity = 0.3;
+//       t2.style.opacity = 0.3;
+//        t4.style.opacity = 0.3;
+//       t5.style.opacity = 0.3;
+//       t3.style.opacity = 1;
+//       x.style.display = "none";
+//       x2.style.display = "none";
+//       x3.style.display = "block";
+//       x4.style.display = "none";
+//       x5.style.display = "none";
+//     }
+//   });
+  
+//   $(window).on("scroll", function () {
+//     var element_position = $("#scroll-to4").offset().top;
+//     var screen_height = $(window).height();
+//     var activation_offset = 0.5; //determines how far up the the page the element needs to be before triggering the function
+//     var activation_point = element_position - screen_height * activation_offset;
+//     var max_scroll_height = $("body").height() - screen_height - 5; //-5 for a little bit of buffer
+//     var y_scroll_pos = window.pageYOffset;
+
+//     var element_in_view = y_scroll_pos > activation_point;
+//     var has_reached_bottom_of_page =
+//       max_scroll_height <= y_scroll_pos && !element_in_view;
+
+//     if (element_in_view || has_reached_bottom_of_page) {
+//       var x = document.getElementById("myDIV");
+//       var x2 = document.getElementById("myDIV2");
+//       var x3 = document.getElementById("myDIV3");
+//         var x4 = document.getElementById("myDIV4");
+//       var x5 = document.getElementById("myDIV5");
+//       var t1 = document.getElementById("scroll-to");
+//       var t2 = document.getElementById("scroll-to2");
+//       var t3 = document.getElementById("scroll-to3");
+//       var t4 = document.getElementById("scroll-to4");
+//       var t5 = document.getElementById("scroll-to5");
+//       t1.style.opacity = 0.3;
+//       t2.style.opacity = 0.3;
+//        t4.style.opacity = 1;
+//       t5.style.opacity = 0.3;
+//       t3.style.opacity = 0.3;
+//       x.style.display = "none";
+//       x2.style.display = "none";
+//       x3.style.display = "none";
+//       x4.style.display = "block";
+//       x5.style.display = "none";
+//     }
+//   });
+  
+//   $(window).on("scroll", function () {
+//     var element_position = $("#scroll-to5").offset().top;
+//     var screen_height = $(window).height();
+//     var activation_offset = 0.5; //determines how far up the the page the element needs to be before triggering the function
+//     var activation_point = element_position - screen_height * activation_offset;
+//     var max_scroll_height = $("body").height() - screen_height - 5; //-5 for a little bit of buffer
+//     var y_scroll_pos = window.pageYOffset;
+
+//     var element_in_view = y_scroll_pos > activation_point;
+//     var has_reached_bottom_of_page =
+//       max_scroll_height <= y_scroll_pos && !element_in_view;
+
+//     if (element_in_view || has_reached_bottom_of_page) {
+//       var x = document.getElementById("myDIV");
+//       var x2 = document.getElementById("myDIV2");
+//       var x3 = document.getElementById("myDIV3");
+//         var x4 = document.getElementById("myDIV4");
+//       var x5 = document.getElementById("myDIV5");
+//       var t1 = document.getElementById("scroll-to");
+//       var t2 = document.getElementById("scroll-to2");
+//       var t3 = document.getElementById("scroll-to3");
+//       var t4 = document.getElementById("scroll-to4");
+//       var t5 = document.getElementById("scroll-to5");
+//       t1.style.opacity = 0.3;
+//       t2.style.opacity = 0.3;
+//        t4.style.opacity = 0.3;
+//       t5.style.opacity = 1;
+//       t3.style.opacity = 0.3;
+//       x.style.display = "none";
+//       x2.style.display = "none";
+//       x3.style.display = "none";
+//       x4.style.display = "none";
+//       x5.style.display = "block";
+//     }
+//   });
+  // $(window).scroll(function () {
+  //   var activation_offset = 0.9;
+
+  //   // var centerLine = $(window).width() / 2;
+  //   // var divStart = $(this).offset().left;
+  //   // var divEnd = divStart + $(this).width();
+  //   // if (divStart < centerLine && divEnd > centerLine) {
+  //   //   //do the thing
+  //   // }
+
+  //   var hT = $("#scroll-to").offset().top,
+  //     hH = $("#scroll-to").outerHeight(),
+  //     wH = $(window).height(),
+  //     wS = $(this).scrollTop();
+  //   if (wS > hT + hH - wH && hT > wS && wS + wH > hT + hH) {
+  //     console.log("H1 on the view!");
+  //     var x = document.getElementById("myDIV");
+  //     var x2 = document.getElementById("myDIV2");
+  //     var x3 = document.getElementById("myDIV3");
+  //     var t1 = document.getElementById("scroll-to");
+  //     var t2 = document.getElementById("scroll-to2");
+  //     var t3 = document.getElementById("scroll-to3");
+  //     t3.style.opacity = 0.3;
+  //     t2.style.opacity = 0.3;
+  //     t1.style.opacity = 1;
+  //     x.style.display = "block";
+  //     x2.style.display = "none";
+  //     x3.style.display = "none";
+  //   }
+  // });
+  // $(window).scroll(function () {
+  //   var activation_offset = 0.9;
+  //   var hT = $("#scroll-to2").offset().top,
+  //     hH = $("#scroll-to").outerHeight(),
+  //     wH = $(window).height(),
+  //     wS = $(this).scrollTop();
+  //   if (wS > hT + hH - wH && hT > wS && wS + wH > hT + hH) {
+  //     console.log("H1 on the view!");
+  //     var x = document.getElementById("myDIV");
+  //     var x2 = document.getElementById("myDIV2");
+  //     var x3 = document.getElementById("myDIV3");
+  //     var t1 = document.getElementById("scroll-to");
+  //     var t2 = document.getElementById("scroll-to2");
+  //     var t3 = document.getElementById("scroll-to3");
+  //     t1.style.opacity = 0.3;
+  //     t2.style.opacity = 1;
+  //     t3.style.opacity = 0.3;
+  //     x.style.display = "none";
+  //     x2.style.display = "block";
+  //     x3.style.display = "none";
+  //   }
+  // });
+  // $(window).scroll(function () {
+  //   var activation_offset = 0.9;
+  //   var hT = $("#scroll-to3").offset().top,
+  //     hH = $("#scroll-to").outerHeight(),
+  //     wH = $(window).height(),
+  //     wS = $(this).scrollTop();
+  //   if (wS > hT + hH - wH && hT > wS && wS + wH > hT + hH) {
+  //     console.log("H1 on the view!");
+  //     var x = document.getElementById("myDIV");
+  //     var x2 = document.getElementById("myDIV2");
+  //     var x3 = document.getElementById("myDIV3");
+  //     var t1 = document.getElementById("scroll-to");
+  //     var t2 = document.getElementById("scroll-to2");
+  //     var t3 = document.getElementById("scroll-to3");
+  //     t1.style.opacity = 0.3;
+  //     t2.style.opacity = 0.3;
+  //     t3.style.opacity = 1;
+  //     x.style.display = "none";
+  //     x2.style.display = "none";
+  //     x3.style.display = "block";
+  //   }
+  // });
+  // $(document).scroll(function () {
+  //   $("#scroll-to3").each(function () {
+  //     var centerLine = $(window).width() / 2;
+  //     var divStart = $(this).offset().left;
+  //     var divEnd = divStart + $(this).width();
+  //     if (divStart < centerLine && divEnd > centerLine) {
+  //       console.log("H1 on the view!");
+  //       var x = document.getElementById("myDIV");
+  //       var x2 = document.getElementById("myDIV2");
+  //       var x3 = document.getElementById("myDIV3");
+  //       var t1 = document.getElementById("scroll-to");
+  //       var t2 = document.getElementById("scroll-to2");
+  //       var t3 = document.getElementById("scroll-to3");
+  //       t1.style.opacity = 0.3;
+  //       t2.style.opacity = 0.3;
+  //       t3.style.opacity = 1;
+  //       x.style.display = "none";
+  //       x2.style.display = "none";
+  //       x3.style.display = "block";
+  //     } else {
+  //     }
+  //   });
+  // });
+
+  //   $("#scroll-to").scroll(function () {
+  //     alert("you have scrolled to the h1!");
+  //   });
+  //   $("#scroll-to2").scroll(function () {
+  //     alert("you have scrolled to the h2!");
+  //   });
+  //   $("#scroll-to3").scroll(function () {
+  //     alert("you have scrolled to the h3!");
+  //   });
+  //   function myFunction() {
+  //     var x = document.getElementById("myDIV");
+  //     var x2 = document.getElementById("myDIV2");
+  //     var x3 = document.getElementById("myDIV3");
+  //     x.style.display = "block";
+  //     x2.style.display = "none";
+  //     x3.style.display = "none";
+  //     // if (x.style.display === "none") {
+  //     //   x.style.display = "block";
+  //     // } else {
+  //     //   x.style.display = "none";
+  //     // }
+  //   }
+  //   function myFunction2() {
+  //     var x = document.getElementById("myDIV");
+  //     var x2 = document.getElementById("myDIV2");
+  //     var x3 = document.getElementById("myDIV3");
+  //     x.style.display = "none";
+  //     x2.style.display = "block";
+  //     x3.style.display = "none";
+  //     // var x = document.getElementById("myDIV2");
+  //     // if (x.style.display === "none") {
+  //     //   x.style.display = "block";
+  //     // } else {
+  //     //   x.style.display = "none";
+  //     // }
+  //   }
+  //   function myFunction3() {
+  //     var x = document.getElementById("myDIV");
+  //     var x2 = document.getElementById("myDIV2");
+  //     var x3 = document.getElementById("myDIV3");
+  //     x.style.display = "none";
+  //     x2.style.display = "none";
+  //     x3.style.display = "block";
+  //     // var x = document.getElementById("myDIV3");
+  //     // if (x.style.display === "none") {
+  //     //   x.style.display = "block";
+  //     // } else {
+  //     //   x.style.display = "none";
+  //     // }
+  //   }
+</script>

@@ -1,0 +1,413 @@
+<div class="about-page-section-wrapper">
+    <div class="about-page-section-container">
+            <div class="top_banner_sec">
+                <div class="about-page-section-1-text">
+                    <h2>{{ section.settings.roundheroTitles }}</h2>
+
+                </div>
+            </div>
+
+    </div>
+</div>
+
+<div class="about-page-section-wrapper txtImg_round">
+    <div class="about-page-section-container">
+        <div class="about-page-section-row">
+            <div class="about-page-section-column w-l-50">
+                <div class="about-page-section-1-image">
+                    <img src="{{ section.settings.iwt_banner | img_url: '501x' }}" alt="">
+                </div>
+            </div>
+            <div class="about-page-section-column w-e-50 p-50">
+                <div class="about-page-section-1-text">
+                    <h2>{{ section.settings.iwtSectionTitle }}</h2>
+                    <div class="section_detail_content">{{ section.settings.iwtContent }}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="custom_section_title">
+  <h2>{{ section.settings.iwtSectionTitless}}</h2>
+</div>
+<div class="moving_content safron_moving">
+<div class="single_moving_content">
+  
+  <img src="{{ section.settings.smoving_banner1}}" />
+  <h2>{{ section.settings.smoving_title1 }}</h2>
+  <div class="moving_content_des">
+    {{ section.settings.smoving_description1 }}
+  </div>
+  
+</div>
+<div class="single_moving_content">
+  
+  <img src="{{ section.settings.smoving_banner2 }}" />
+  <h2>{{ section.settings.smoving_title2 }}</h2>
+  <div class="moving_content_des">
+    {{ section.settings.smoving_description2 }}
+  </div>
+  
+</div>
+<div class="single_moving_content">
+ 
+  <img src="{{ section.settings.smoving_banner3}}" />
+   <h2>{{ section.settings.smoving_title3 }}</h2>
+  <div class="moving_content_des">
+    {{ section.settings.smoving_description3 }}
+  </div>
+  
+</div>
+ </div>
+
+
+
+
+{% for block in section.blocks %}
+<div class="side_img_sections about-page-section-wrapper" {{ block.shopify_attributes }}>
+    <div class="about-page-section-container-full">
+        <div class="about-page-section-row">
+            <div class="about-page-section-column">
+                <div class="about-page-section-1-image">
+                    <img src="{{ block.settings.imageBox_img | img_url: '730x730' }}" alt="">
+                </div>
+            </div>
+            <div class="about-page-section-column p-50">
+                <div class="about-page-section-1-text">
+                    <h2>{{ block.settings.imageBox_title }}</h2>
+                    <div class="section_detail_content">
+                      <div class="section_detail_content_des"> 
+                      {{ block.settings.imageBox_content }}
+                      </div>
+                      <div class="section_detail_content_exapmple"> 
+                      {{ block.settings.imageBox_example }}
+                      </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}
+<div class="about-page-section-wrapper">
+    <div class="about-page-section-container">
+        <div class="about-page-section-row ">
+            <div class="about-page-section-column">
+                <div class="about-page-section-1-image">
+                    <img src="{{ section.settings.sideImg_intro | img_url: '501x' }}" alt="">
+                </div>
+            </div>
+          
+            <div class="about-page-section-column p-50">
+                <div class="about-page-section-1-text">
+                    <h2>{{ section.settings.siwt_title }}</h2>
+                    <div class="section_detail_content">{{ section.settings.siwt_content }}</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="about-page-section-wrapper h-100v" style="background-image: url({{ section.settings.safroncta_bgimg | img_url: '1920x' }});">
+    <div class="about-page-section-container">
+        <div class="about-page-section-row">
+            <div class="about-page-section-column">
+                <div class="about-page-section-cta">
+                    <h2>{{ section.settings.safroncta_title }}</h2>
+                    <a class="button button--primary" href="{{ section.settings.safroncta_url }}">{{ section.settings.safroncta_buttonText }}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Page content",
+    "class": "shopify-section-safronpage",
+    "settings": [
+		{
+			"type": "image_picker",
+			"id": "round_hero_banners",
+			"label": "Round picture",
+			"info": "Round picture"
+		},
+		
+		{
+			"type": "text",
+			"id": "roundheroTitles",
+			"label": "Section title",
+            "default": "Put Section title"
+		},
+		{
+			"type": "text",
+			"id": "image_caption_rounds",
+			"label": "Image section",
+            "default": "Image caption"
+		},
+		{
+			"type": "richtext",
+			"id": "roundheroContents",
+			"label": "Section content",
+			 "default": "<p>Put the details content</p>"
+		},
+        {
+			"type": "header",
+			"content": "Banner images"
+
+		},
+		{
+			"type": "image_picker",
+			"id": "fullpage_banner",
+			"label": "First Full page banner ",
+			"info": "Full page banner"
+		},
+		{
+			"type": "image_picker",
+			"id": "fullpage_banner2",
+			"label": "Second Full page banner",
+			"info": "Full page banner"
+		},
+        {
+			"type": "header",
+			"content": "Smell area"
+
+		},
+        {
+			"type": "image_picker",
+			"id": "iwt_banner",
+			"label": "Section image for rightside text area",
+			"info": "Section image"
+		},
+         {
+			"type": "text",
+			"id": "iwtSectionTitle",
+			"label": "Section title rightside text area",
+            "default": "Section title rightside text area"
+		},
+		{
+			"type": "richtext",
+			"id": "iwtContent",
+			"label": "Section content rightside text area",
+			"default": "<p>Put the details content</p>"
+		},
+         {
+			"type": "text",
+			"id": "iwtSectionTitless",
+			"label": "Section title after scent",
+            "default": "Section title after scent"
+		},
+        {
+			"type": "header",
+			"content": "appearance area"
+
+		},
+        {
+			"type": "image_picker",
+			"id": "apiwt_banner",
+			"label": "Section image for rightside text area",
+			"info": "Section image"
+		},
+         {
+			"type": "text",
+			"id": "apiwtSectionTitle",
+			"label": "Section title rightside text area",
+            "default": "Section title rightside text area"
+		},
+		{
+			"type": "richtext",
+			"id": "apiwtContent",
+			"label": "Section content rightside text area",
+			"default": "<p>Put the details content</p>"
+		},
+        {
+			"type": "header",
+			"content": "Taste area"
+
+		},
+        {
+			"type": "image_picker",
+			"id": "tsiwt_banner",
+			"label": "Section image for rightside text area",
+			"info": "Section image"
+		},
+         {
+			"type": "text",
+			"id": "tsiwtSectionTitle",
+			"label": "Section title rightside text area",
+            "default": "Section title rightside text area"
+		},
+		{
+			"type": "richtext",
+			"id": "tsiwtContent",
+			"label": "Section content rightside text area",
+			"default": "<p>Put the details content</p>"
+		},
+        {
+			"type": "header",
+			"content": "Bottom image box content area"
+
+		},
+ 
+		{
+			"type": "image_picker",
+			"id": "sideImg_intro",
+			"label": "Side image section intro round image",
+			"info": "Side image section intro round image"
+		},
+		{
+			"type": "text",
+			"id": "siwt_title",
+			"label": "Section intro title",
+			"info": "Section intro title"
+		},		
+        {
+			"type": "richtext",
+			"id": "siwt_content",
+			"label": "Section intro content",
+			"info": "Section intro content"
+		},
+        {
+			"type": "header",
+			"content": "Footer CTA Part"
+
+		},
+		{
+			"type": "text",
+			"id": "safroncta_title",
+			"label": "CTA title",
+			"default": "CTA title"
+		},
+		{
+			"type": "text",
+			"id": "safroncta_buttonText",
+			"label": "CTA Button text",
+			"default": "Button Text of CTA"
+		},
+        {
+			"type": "text",
+			"id": "safroncta_url",
+			"label": "CTA Button URL",
+			"default": "Button URl of CTA"
+		},
+		{
+			"type": "image_picker",
+			"id": "safroncta_bgimg",
+			"label": "Background image of CTA area",
+			"info": "Background image of CTA area"
+		},
+			{
+			"type": "header",
+			"content": "Moving image section 1",
+			"info": "PMoving image section details."
+		},
+		{
+			"type": "text",
+			"id": "smoving_title1",
+			"label": "Moving box 1 title",
+			"default": "First box title"
+		},
+		{
+			"type": "richtext",
+			"id": "smoving_description1",
+			"label": "Moving box 1 Description",
+			"default": "<p>Saffron flower stigma.  </p>"
+		},
+		{
+			"type": "text",
+			"id": "smoving_banner1",
+			"label": "Moving Section 1 URL",
+             "default": "GIF URL"
+			
+		},
+		{
+			"type": "header",
+			"content": "Moving image section 2",
+			"info": "PMoving image section details."
+		},
+		{
+			"type": "text",
+			"id": "smoving_title2",
+			"label": "Moving box 2 title",
+			"default": "Second box title"
+		},
+		{
+			"type": "richtext",
+			"id": "smoving_description2",
+			"label": "Moving box 2 Description",
+			"default": "<p>Second box description  </p>"
+		},
+		{
+			"type": "text",
+			"id": "smoving_banner2",
+			"label": "Moving Section image URL",
+			"default": "GIF URL"
+		},
+		{
+			"type": "header",
+			"content": "Moving image section 3",
+			"info": "PMoving image section details."
+		},
+		{
+			"type": "text",
+			"id": "smoving_title3",
+			"label": "Moving box 3 title",
+			"default": "Third box title"
+		},
+		{
+			"type": "richtext",
+			"id": "smoving_description3",
+			"label": "Moving box 3 Description",
+			"default": "<p>Moving secrion 3 content</p>"
+		},
+		{
+			"type": "text",
+			"id": "smoving_banner3",
+			"label": "Moving Section 3 URL",
+			"default": "GIF URL"
+		}
+   ],
+ "blocks": [
+      {
+        "type": "image_box",
+        "name": "Image box",
+        "limit": 10,
+        "settings": [
+          {
+            "id": "imageBox_img",
+            "type": "image_picker",
+            "label": "Image"
+          },
+		{
+			"type": "text",
+			"id": "imageBox_title",
+			"label": "Section  title",
+			"info": "Section title"
+		},		
+        {
+			"type": "richtext",
+			"id": "imageBox_content",
+			"label": "Section content",
+			"info": "Section content"
+		},
+        {
+			"type": "richtext",
+			"id": "imageBox_example",
+			"label": "Example content",
+			"info": "Example content"
+		}
+        ]
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

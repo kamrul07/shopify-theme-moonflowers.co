@@ -1,0 +1,185 @@
+<div class="about-page-section-wrapper txtImg_round support_top_header">
+    <div class="about-page-section-container">
+        <div class="about-page-section-row mobile-reverse">
+            <div class="about-page-section-column">
+                <div class="about-page-section-1-text">
+                    <h2>{{ section.settings.sproundheroTitless }}</h2>
+                    <div class="round_page_content">
+                    {{ section.settings.sproundheroContentss }}
+                  </div>
+                </div>
+            </div>
+            <div class="about-page-section-column">
+                <div class="about-page-section-1-image round">
+                    <img src="{{ section.settings.spround_hero_banners | img_url: '501x501' }}" alt="">
+                    <p>{{ section.settings.spimage_caption_roundss }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="about-page-section-wrapper txtImg_round">
+    <div class="about-page-section-container">
+        <div class="about-page-section-row">
+            <div class="about-page-section-column w-l-50">
+                <div class="about-page-section-1-image">
+                    <img src="{{ section.settings.spiwt_banner | img_url: '501x' }}" alt="">
+                </div>
+            </div>
+            <div class="about-page-section-column w-e-50 p-50">
+                <div class="about-page-section-1-text">
+                    <h2>{{ section.settings.spiwtSectionTitle }}</h2>
+                    <div class="section_detail_content">{{ section.settings.spiwtContent }}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="about-page-section-wrapper txtImg_round">
+    <div class="about-page-section-container">
+        <div class="about-page-section-row mobile-reverse">
+            <div class="about-page-section-column w-m-50 p-50">
+                <div class="about-page-section-1-text">
+                    <h2>{{ section.settings.spiwtlSectionTitle }}</h2>
+                    <div class="section_detail_content">{{ section.settings.spiwtlContent }}</div>
+                </div>
+            </div>
+            <div class="about-page-section-column w-l-50 p-50">
+                <div class="about-page-section-1-image">
+                    <img src="{{ section.settings.spiwtl_banner | img_url: '501x' }}" alt="{{ section.settings.spiwtlSectionTitle }}">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="about-page-section-wrapper h-100v" style="background-image: url({{ section.settings.spcta_bgimg | img_url: '1920x' }});">
+    <div class="about-page-section-container">
+        <div class="about-page-section-row">
+            <div class="about-page-section-column">
+                <div class="about-page-section-cta">
+                    <h2>{{ section.settings.spcta_title }}</h2>
+                    <a class="button button--primary" href="{{ section.settings.spcta_url }}">{{ section.settings.spcta_buttonText }}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% schema %}
+{
+	"name": "Page content",
+	"class": "shopify-section-roundheros",
+	"settings": [
+        {
+			"type": "header",
+			"content": "Top section"
+
+		},
+		{
+			"type": "image_picker",
+			"id": "spround_hero_banners",
+			"label": "Round picture",
+			"info": "Round picture"
+		},
+		
+		{
+			"type": "text",
+			"id": "sproundheroTitless",
+			"label": "Section title",
+            "default": "Put Section title"
+		},
+		{
+			"type": "text",
+			"id": "spimage_caption_roundss",
+			"label": "Image section",
+            "default": "Image caption"
+		},
+		{
+			"type": "richtext",
+			"id": "sproundheroContentss",
+			"label": "Section content",
+			 "default": "<p>Put the details content</p>"
+		},
+        {
+			"type": "header",
+			"content": "Right Side Content"
+
+		},
+		{
+			"type": "image_picker",
+			"id": "spiwt_banner",
+			"label": "Section image",
+			"info": "Section image"
+		},
+         {
+			"type": "text",
+			"id": "spiwtSectionTitle",
+			"label": "Section title",
+            "default": "Section title"
+		},
+		{
+			"type": "richtext",
+			"id": "spiwtContent",
+			"label": "Section content",
+			"default": "<p>Put the details content</p>"
+		},
+        {
+			"type": "header",
+			"content": "Left Side Content"
+
+		},
+		{
+			"type": "image_picker",
+			"id": "spiwtl_banner",
+			"label": "Section image",
+			"info": "Section image"
+		},
+         {
+			"type": "text",
+			"id": "spiwtlSectionTitle",
+			"label": "Section title",
+            "default": "Section title"
+		},
+		{
+			"type": "richtext",
+			"id": "spiwtlContent",
+			"label": "Section content",
+			"default": "<p>Put the details content</p>"
+		},
+        {
+			"type": "header",
+			"content": "Footer CTA Part"
+
+		},
+		{
+			"type": "text",
+			"id": "spcta_title",
+			"label": "CTA title",
+			"default": "CTA title"
+		},
+		{
+			"type": "text",
+			"id": "spcta_buttonText",
+			"label": "CTA Button text",
+			"default": "Button Text of CTA"
+		},
+        {
+			"type": "text",
+			"id": "spcta_url",
+			"label": "CTA Button URL",
+			"default": "Button URl of CTA"
+		},
+		{
+			"type": "image_picker",
+			"id": "spcta_bgimg",
+			"label": "Background image of CTA area",
+			"info": "Background image of CTA area"
+		}
+	]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

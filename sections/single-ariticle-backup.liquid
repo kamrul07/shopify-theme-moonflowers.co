@@ -1,0 +1,66 @@
+    <div class="dri-full-screen-section-50-50-wraper">
+        <div class="dri-full-screen-section-50-50">
+            <div class="dri-full-screen-section-50-50-item">
+                <div class="dri-full-screen-50-50-left">
+                   <img src="{{ article.image | img_url: 'master' }}" alt="">
+                </div>
+                <div class="dri-full-screen-50-50-right">
+                    <div class="dri-full-screen-50-50-slider-right-inner">
+                      <div class="blog inner_content">
+                        <a class="cta" href="/blogs/recipes">Back to Recipes</a>
+                        <h1>{{ article.title }}</h1>
+                        <div class="blog_contetn">{{- article.content -}}</div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+			{%- if blog.next_article or blog.previous_article -%}
+				<p class="prev-next custom_prev_text">
+					{%- if blog.previous_article -%}
+						<span class="__prev">
+							<a href="{{ blog.previous_article }}">
+                              <svg viewBox="0 0 35 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path class="shape" d="M0 23.285L35 .573v45.425L0 23.285z"></path>
+                              </svg>
+							</a>
+						</span>
+					{%- endif -%}
+
+					{%- if blog.next_article -%}
+						<span class="__next">
+							<a href="{{ blog.next_article }}">
+								<svg viewBox="0 0 35 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="shape" d="M35 22.313L0 44.624V0l35 22.313z"></path>
+                                </svg>
+							</a>
+						</span>
+					{%- endif -%}
+				</p>
+			{%- endif -%}
+    </div>
+
+
+    <div class="dri-product-slider-wraper">
+        <div class="dri-product-slider-inner">
+            <div class="dri-product-slider-section-title">
+                <h2>MORE RECIPES HERE</h2>
+            </div>
+            <div class="dri-product-slider-call owl-carousel">
+
+{% for article in blogs.recipes.articles  %}
+                <div class="dri-product-slider-item">
+                    <a href="{{ article.url }}">
+                      <div class="article_imgs" style="background:url({{ article.image | img_url: 'large' }});" ></div>
+                        
+                        <div class="dri-product-slider-item-text " style="background-color: #b7d1e8;">
+                            <h2>{{ article.title }}</h2>
+                            <p>{{ article.excerpt_or_content | strip_html | strip }}</p>
+                        </div>
+                    </a>
+                </div>
+              {% endfor %}
+            </div>
+        </div>
+    </div>

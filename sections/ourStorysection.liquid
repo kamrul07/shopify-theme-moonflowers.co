@@ -1,0 +1,83 @@
+<div class="our-story-section-wrapper">
+        <div class="our-story-section-inner">
+            <div class="our-story-section-content">
+                <div class="our-story-section-content-text">
+                  <div class="image_icontext">
+                  <img src="{{ section.settings.textboxicon | img_url:'120x120' }}" alt="{{ section.settings.founderTitle }}">
+                  </div>
+                  <div class="ourStoryTest">
+                  {{ section.settings.storyContent }}
+                  </div>
+                  <div class="ourStorySin">
+                  <img src="{{ section.settings.signatureIcon | img_url:'350x104' }}" alt="{{ section.settings.founderTitle }}">
+                  </div>
+                  <div class="ourStoryFounder">
+                    <p>{{ section.settings.founderTitle }}</p> 
+                  </div>
+                     
+                </div>
+                <div class="our-story-section-content-image">
+                   
+                </div>
+
+                <div class="our-story-section-content-bg-image">
+                    <img src="{{ section.settings.story_banner | img_url:'803x1024' }}" alt="{{ section.settings.founderTitle }}">
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+{% schema %}
+{
+	"name": "Our story content",
+	"class": "shopify-section-ourStory",
+	"settings": [
+		{
+			"type": "image_picker",
+			"id": "story_banner",
+			"label": "Main banner",
+			"info": "Main banner"
+		},
+		{
+			"type": "image_picker",
+			"id": "textboxicon",
+			"label": "Text box icon",
+			"info": "Text box icon"
+		},
+		{
+			"type": "image_picker",
+			"id": "signatureIcon",
+			"label": "Signature Icon",
+			"info": "Signature Icon"
+		},
+		{
+			"type": "text",
+			"id": "founderTitle",
+			"label": "Founder text",
+            "default": "Put founder name,position"
+		},
+		{
+			"type": "richtext",
+			"id": "storyContent",
+			"label": "Story content",
+"default": "<p>Put the details content</p>"
+		}
+	]
+}
+{% endschema %}
+
+
+
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

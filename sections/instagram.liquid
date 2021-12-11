@@ -1,0 +1,130 @@
+<div class="instagram_section_wrapper desktop_version">
+  <a href="{{ section.settings.insta_url }}" target="_blank"><h2>{{ section.settings.insta_title }}</h2> </a>
+  <div class="instagram_section_wrapper_inner">
+  <div class="instagram-feed__col">
+    <a class="instagram-feed__item" href="{{ section.settings.insta_url11 }}" target="_blank" >
+		<img  alt="" src="{{ section.settings.instaBox_img1 | img_url: '501x' }}">
+    </a>
+	<a class="instagram-feed__item" href="{{ section.settings.insta_url2 }}" target="_blank">
+    <img  alt="" src="{{ section.settings.instaBox_img2 | img_url: '501x' }}">
+	</a>
+    <a class="instagram-feed__item" href="{{ section.settings.insta_url3 }}" target="_blank" >
+        <img class="lazy__img js-img x y o-cover" alt="" src="{{ section.settings.instaBox_img3 | img_url: '501x' }}">
+    </a>
+  </div>
+<div class="instagram-feed__col">
+          
+<a class="instagram-feed__item" href="{{ section.settings.insta_url4 }}" target="_blank" >
+<img alt="" src="{{ section.settings.instaBox_img4 | img_url: '501x' }}">
+</a>
+          
+<a class="instagram-feed__item" href="{{ section.settings.insta_url5 }}" target="_blank" >
+    <img  alt="" src="{{ section.settings.instaBox_img5 | img_url: '501x' }}">
+</a>
+        </div>
+</div>
+</div>
+
+
+<div class="instagram_section_wrapper mobile_version">
+<a href="{{ section.settings.insta_url }}" target="_blank"><h2>{{ section.settings.insta_title }}</h2> </a>
+<div class="instagram-feed__colm owl-carousel">
+    <a class="instagram-feed__itemm" href="{{ section.settings.insta_url11 }}" target="_blank" >
+		<img  alt="" src="{{ section.settings.instaBox_img1 | img_url: '501x' }}">
+    </a>
+	<a class="instagram-feed__itemm" href="{{ section.settings.insta_url2 }}" target="_blank">
+    <img  alt="" src="{{ section.settings.instaBox_img2 | img_url: '501x' }}">
+	</a>
+    <a class="instagram-feed__itemm" href="{{ section.settings.insta_url3 }}" target="_blank" >
+        <img class="lazy__img js-img x y o-cover" alt="" src="{{ section.settings.instaBox_img3 | img_url: '501x' }}">
+    </a>
+
+          
+<a class="instagram-feed__itemm" href="{{ section.settings.insta_url4 }}" target="_blank" >
+<img alt="" src="{{ section.settings.instaBox_img4 | img_url: '501x' }}">
+</a>
+          
+<a class="instagram-feed__itemm" href="{{ section.settings.insta_url5 }}" target="_blank" >
+    <img  alt="" src="{{ section.settings.instaBox_img5 | img_url: '501x' }}">
+</a>
+</div>
+</div>
+{% schema %}
+{
+	"name": "Instagram feed",
+	"class": "shopify-section--instagram",
+	"settings": [
+		{
+			"type": "text",
+			"id": "insta_title",
+			"label": "Heading"
+		},
+		{
+			"type": "text",
+			"id": "insta_url",
+			"label": "Instagram Account URL"
+		},
+          {
+            "id": "instaBox_img1",
+            "type": "image_picker",
+            "label": "Image 1"
+          },
+
+		{
+			"type": "text",
+			"id": "insta_url11",
+			"label": "Instagram Photo URL"
+		},
+          {
+            "id": "instaBox_img2",
+            "type": "image_picker",
+            "label": "Image 2"
+          },
+
+		{
+			"type": "text",
+			"id": "insta_url2",
+			"label": "Instagram Photo 2 URL"
+		},
+          {
+            "id": "instaBox_img3",
+            "type": "image_picker",
+            "label": "Image 3"
+          },
+
+		{
+			"type": "text",
+			"id": "insta_url3",
+			"label": "Instagram Photo 3 URL"
+		},
+          {
+            "id": "instaBox_img4",
+            "type": "image_picker",
+            "label": "Image 1"
+          },
+
+		{
+			"type": "text",
+			"id": "insta_url4",
+			"label": "Instagram Photo 4 URL"
+		},
+          {
+            "id": "instaBox_img5",
+            "type": "image_picker",
+            "label": "Image 5"
+          },
+
+		{
+			"type": "text",
+			"id": "insta_url1",
+			"label": "Instagram Photo 5 URL"
+		}
+	],
+		"presets": [
+			{
+				"name": "Instagram feed",
+				"category": "Store information"
+			}
+		]
+}
+{% endschema %}

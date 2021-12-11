@@ -1,0 +1,33 @@
+<div class="about-page-section-wrapper">
+    <div class="about-page-section-container-full">
+        <div class="about-page-section-row">
+            <div class="about-page-section-column">
+                <div class="full-width-image">
+                    <img src="{{ section.settings.fullpage_banner2 | img_url: '1920x' }}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Second Full page banner",
+    "class": "shopify-section-fullpage",
+    "settings": [
+
+		{
+			"type": "image_picker",
+			"id": "fullpage_banner2",
+			"label": "Full page banner",
+			"info": "Full page banner"
+		}
+   ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,125 @@
+<div class="moving_content home_moving">
+<div class="single_moving_content">
+  
+  <img src="{{ section.settings.hmoving_banner1}}" />
+  <h2>{{ section.settings.hmoving_title1 }}</h2>
+  <div class="moving_content_des">
+    {{ section.settings.hmoving_description1 }}
+  </div>
+  
+</div>
+<div class="single_moving_content">
+  
+  <img src="{{ section.settings.hmoving_banner2 }}" />
+  <h2>{{ section.settings.hmoving_title2 }}</h2>
+  <div class="moving_content_des">
+    {{ section.settings.hmoving_description2 }}
+  </div>
+  
+</div>
+<div class="single_moving_content">
+ 
+  <img src="{{ section.settings.hmoving_banner3}}" />
+   <h2>{{ section.settings.hmoving_title3 }}</h2>
+  <div class="moving_content_des">
+    {{ section.settings.hmoving_description3 }}
+  </div>
+  
+</div>
+
+  
+ </div>
+
+
+{% schema %}
+  {
+    "name": "Gif icon section",
+    "class": "shopify-section--image-with-text",
+    "settings": [
+{
+			"type": "header",
+			"content": "Moving image section 1",
+			"info": "PMoving image section details."
+		},
+		{
+			"type": "text",
+			"id": "hmoving_title1",
+			"label": "Moving box 1 title",
+			"default": "First box title"
+		},
+		{
+			"type": "richtext",
+			"id": "hmoving_description1",
+			"label": "Moving box 1 Description",
+			"default": "<p>Saffron flower stigma.  </p>"
+		},
+		{
+			"type": "text",
+			"id": "hmoving_banner1",
+			"label": "Moving Section 1 URL",
+             "default": "GIF URL"
+			
+		},
+		{
+			"type": "header",
+			"content": "Moving image section 2",
+			"info": "PMoving image section details."
+		},
+		{
+			"type": "text",
+			"id": "hmoving_title2",
+			"label": "Moving box 2 title",
+			"default": "Second box title"
+		},
+		{
+			"type": "richtext",
+			"id": "hmoving_description2",
+			"label": "Moving box 2 Description",
+			"default": "<p>Second box description  </p>"
+		},
+		{
+			"type": "text",
+			"id": "hmoving_banner2",
+			"label": "Moving Section image URL",
+			"default": "GIF URL"
+		},
+		{
+			"type": "header",
+			"content": "Moving image section 3",
+			"info": "PMoving image section details."
+		},
+		{
+			"type": "text",
+			"id": "hmoving_title3",
+			"label": "Moving box 3 title",
+			"default": "Third box title"
+		},
+		{
+			"type": "richtext",
+			"id": "hmoving_description3",
+			"label": "Moving box 3 Description",
+			"default": "<p>Moving secrion 3 content</p>"
+		},
+		{
+			"type": "text",
+			"id": "hmoving_banner3",
+			"label": "Moving Section 3 URL",
+			"default": "GIF URL"
+		}
+
+],
+		"presets": [
+			{
+				"category": "Blog",
+				"name": "gif icons slider"
+			}
+		]
+  }
+{% endschema %}
+
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
